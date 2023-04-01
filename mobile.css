@@ -1,0 +1,122 @@
+@media (max-width: 768px) {
+
+    .hero {
+        width: 100%;
+        height: fit-content;
+    }
+
+
+    .hero-text .text-content h1 {
+        font-size: 4rem;
+        padding-top: 150px;
+        padding-bottom: 0;
+        padding-left: 70px;
+
+    }
+
+    .hero-text .text-content h2 {
+        font-size: 1rem;
+        padding-top: 0;
+        padding-bottom: 100px;
+        padding-left: 70px;
+
+    }
+
+    .products {
+        padding: 0 !important;
+    }
+
+    .N-arrivals p {
+        font-size: 1.4rem;
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+    .sale-img {
+        width: auto;
+        background-size: cover;
+        height: fit-content;
+    }
+
+    .btn1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .sale-img h1 {
+        font-family: 'Anton', sans-serif;
+        font-size: 6rem;
+        color: #B6DED9;
+        padding-top: 1rem;
+    }
+
+    .sale-timer .details {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .details .r-rate {
+        height: fit-content;
+        width: 17%;
+        margin: auto;
+    }
+
+    .details .rate {
+        justify-content: center;
+    }
+
+    .history .container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .brands .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .brands .container img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+
+
+    .services .services-1 {
+        padding-bottom: 2rem;
+    }
+
+    .services .services-2 {
+        padding-bottom: 2rem;
+    }
+
+    .services .services-3 {
+        padding-bottom: 2rem;
+    }
+
+
+    .footer .col-md-4 {
+        padding-top: 3rem;
+        padding-left: 1rem !important;
+    }
+
+
+    .footer .col-md-5 {
+        padding-left: 1rem !important;
+    }
+
+    .shop {
+        text-align: center;
+    }
+
+    .footer-line {
+        text-align: center;
+    }
+
+    .collection {
+        max-width: 100%;
+    }
+
+    .c-details h1 {
+        font-size: 1.5rem;
+    }
+}
