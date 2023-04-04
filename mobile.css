@@ -119,4 +119,37 @@
     .c-details h1 {
         font-size: 1.5rem;
     }
+
+
+    .about-img {
+        padding-bottom: 1rem;
+    }
+    
+    .about{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .about-details{
+        padding-top: 3rem;
+     }
+     .contact form {
+        width: 70%;
+    }
+    .banner-title {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+    .contact-title {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+    .c-name {
+        display: inline;
+    }
+
+    .contact-form{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }

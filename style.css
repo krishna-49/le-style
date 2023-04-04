@@ -267,15 +267,20 @@
 }
 
 .form-control-underlined {
-    background-color: #B6DED9 !important;
-    border-style: groove;
+    background-color: #ffffff !important;
     overflow: hidden;
+    border: none;
+}
+.form-control-underlined:focus {
+   outline: none;
+
 }
 
 .btn3 {
     background-color: #47B2B6;
     border-style: groove;
     padding: 1rem;
+    
 }
 
 .btn3:hover {
@@ -288,8 +293,9 @@
 
 .footer {
     padding: 5rem 0;
-
+    background-color: #B6DED9;
 }
+
 
 .contents a:hover {
     text-decoration: underline !important;
@@ -381,62 +387,307 @@
 }
 
 
-/* blog */
 
+/* banner */
 
-.blog__item .blog__item__pic {
-    height: 240px;
-    width: 360px;  
-}
-
-
-.blog__item__text {
-    padding: 30px 30px 25px;
-    margin: 0 30px;
-    margin-top: -35px; 
-    transition: all, 0.3s;
-}
-
-
-.blog__item__text span {
-    color: #3d3d3d;
-    font-size: 13px;
+img {
     display: block;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
-.blog__item__text span img {
-    margin-right: 6px;
-}
-img {
-    max-width: 100%;
-}
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-
-.blog__item__text h5 {
-    color: #0d0d0d;
-    font-weight: 700;
-    line-height: 28px;
-    margin-bottom: 10px;
+.banner {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/5490970/pexels-photo-5490970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex: 1;
 }
 
-h5 {
-    font-size: 18px;
+.banner-title {
+    font-size: 5rem;
+    line-height: 1.2;
 }
 
-.blog__item__text a {
-    display: inline-block;
-    color: #111111;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    padding: 3px 0;
+.banner-title span {
+    color: #aaf2f5;
+    font-weight: bold;
+}
+
+.banner p {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    font-weight: 500;
+}
+
+.banner form {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-text {
+    font-size: 1.1 rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: 0 !important;
+}
+
+.search-input::placeholder {
+    text-transform: capitalize;
+}
+
+.search-btn {
+    width: 40px;
+    font-size: 1.1rem;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+.design {
+    padding: 4.5rem 0;
+}
+
+.title {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.title h2 {
+    font-size: 2.4rem;
+}
+
+.title p {
+    text-transform: capitalize;
+    padding: 0.6rem 0;
+}
+
+.design-content {
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.design-img {
     position: relative;
-    color: #007bff;
+    overflow: hidden;
+}
+
+.design-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.design-img img {
+    transition: all 0.5s ease;
+}
+
+.design-item:hover img {
+    transform: scale(1.2);
+}
+
+.design-img span:first-of-type {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background-color: #aaaaaa;
+    color: rgb(255, 255, 255);
+    padding: 0.25rem 0.75rem;
+    vertical-align: middle;
+}
+
+.design-img span:last-of-type {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    background-color: #aaaaaa;
+    color: rgb(0, 0, 0);
+    padding: 0.25rem 0.75rem;
+    vertical-align: middle;
+}
+
+.design-title {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.design-title a {
     text-decoration: none;
-    background-color: transparent;
+    color: #0e3a3b;
+    text-transform: capitalize;
+}
+
+.about {
+    padding: 4.5rem 0;
+    background-color: #1d201c;
+}
+
+.about-img {
+    padding: 3rem;
+}
+
+.about-img img {
+    transition: all 0.5s ease;
+    border: 1px solid #fcfcfc;
+}
+
+.about-img:hover img {
+    transform: scale(0.9);
+}
+
+.about-details {
+    padding: 3rem;
+}
+
+
+/* contact */
+.contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/IMG-11.jpg) center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+.contact-title {
+    font-size: 5rem;
+    line-height: 1.2;
+}
+
+.contact-title span {
+    color: #aaf2f5;
+    font-weight: bold;
+}
+
+.contact p {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    font-weight: 500;
+}
+
+.contact form {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.contact-text {
+    font-size: 1.1 rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: 0 !important;
+}
+
+.contact-input::placeholder {
+    text-transform: capitalize;
+}
+
+.contact-btn {
+    width: 40px;
+    font-size: 1.1rem;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+    color: #47B2B6;
+}
+
+.contact-form {
+    padding: 4.5rem 0;
+    background-color: #1d201c;
+}
+
+.contact-form .container {
+    padding: 2rem;
+    background-color:  #B6DED9;
+}
+
+.c-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-name .contact-N {
+    padding: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    width: 100%;
+    border: 0;
+}
+
+.contact-N:focus {
+    outline: none;
+}
+
+.contact-C:focus {
+    outline: none;
+}
+
+.c-name .contact-C {
+    padding: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+    border: 0;
+}
+
+.contact-form textarea {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 15px;
+    color: #b7b7b7;
+    margin-bottom: 0;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.contact-block .btn3 {
+    width: 50%;
+    color: white;
+    border: 1px solid black;
+    background-color: #000000;
+    color: #B6DED9;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 1.5rem;
+}
+
+.btn3:hover {
+    background-color: #B6DED9;
+    color: black;
+    transition: 0.5s;
 }
